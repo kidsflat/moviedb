@@ -1,0 +1,48 @@
+@import './../../App/App-styles/App-vars.css';
+
+.wrapper {
+  height: calc(100vh - 97px);
+  background-color: var(--dark);
+}
+
+
+.row {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+.upbtnCol {
+  flex-shrink: 0;
+  padding-left: 5px;
+}
+
+.navBtn {
+  height: 100%;
+  border: 2px solid #fff;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+.navBtn:hover {
+  background-color: var(--accent);
+}
+.navBtn:before {
+  font-family: FontAwesome;
+  font-size: 24px;
+  color: #fff;
+}
+.navBtnTop:before {
+  content: '\f062';
+}
+.navBtnBottom:before {
+  content: '\f063';
+}
+
+
+.mainCol {
+  flex-grow: 1;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}

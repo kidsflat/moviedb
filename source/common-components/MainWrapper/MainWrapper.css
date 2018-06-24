@@ -1,0 +1,13 @@
+.row {
+  display: flex;
+}
+
+
+.sidebarCol {
+  flex-shrink: 0;
+}
+
+
+.mainCol {
+  flex-grow: 1;
+}

@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "outDir": "./build/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "target": "es5",
+    "jsx": "react",
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "paths": {
+      "apiLib/*": ["./source/apiLib/*"],
+      "App/*": ["./source/App/*"],
+      "common-components/*": ["./source/common-components/*"],
+      "common-helper-functions/*": ["./source/common-helper-functions/*"],
+      "contexts/*": ["./source/contexts/*"],
+      "pages/*": ["./source/pages/*"],
+      "stores/*": ["./source/stores/*"]
+    },
+    "lib": ["dom", "es6","es5", "esnext"]
+  },
+  "include": [
+    "./source/**/*"
+  ]
+}

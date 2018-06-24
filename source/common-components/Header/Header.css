@@ -1,0 +1,83 @@
+@import './../../App/App-styles/App-vars.css';
+
+.header {
+  padding: 20px;
+  background-color: var(--dark);
+}
+
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 57px;
+}
+
+
+.search {
+  display: flex;
+  height: 33px;
+  border: 2px solid var(--accent);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.searchBtn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.searchBtn:before {
+  font-family: FontAwesome;
+  content: '\f002';
+  color: var(--dark);
+}
+.searchBtn:hover:before {
+  color: var(--accent);
+}
+.searchBtn:after {
+  content: '';
+  position: absolute;
+  left: 100%;
+  top: calc(50% - 8px);
+  height: 16px;
+  width: 1.5px;
+  background-color: #888;
+}
+.searchInput {
+  width: 220px;
+  padding: 0 10px;
+  border: none;
+  outline: none;
+}
+
+
+.nav {
+  display: flex;
+}
+.link {
+  color: #fff;
+  white-space: nowrap;
+}
+.link:hover {
+  color: var(--accent);
+}
+.link:not(:last-child) {
+  position: relative;
+  margin-right: 40px;
+}
+.link:not(:last-child):before {
+  content: '';
+  position: absolute;
+  right: -20px;
+  top: calc(50% - 8px);
+  height: 16px;
+  width: 1.5px;
+  background-color: #fff;
+  pointer-events: none;
+}

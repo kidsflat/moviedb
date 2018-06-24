@@ -1,0 +1,150 @@
+@import './../../App/App-styles/App-vars.css';
+
+.sidebar {
+  height: 100vh;
+}
+.sidebarOpened {
+  overflow: auto;
+}
+.sidebarClosed {
+  overflow-x: hidden;
+}
+
+.content {
+  padding: 0 15px;
+  min-height: 100vh;
+  width: 300px;
+  background-color: #454AAC;
+}
+.sidebarOpened .content {
+  width: 300px;
+}
+.sidebarClosed .content {
+  width: 70px;
+}
+
+
+.top {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.toggleIconWrapper {
+}
+.toggleIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  font-family: FontAwesome;
+  font-size: 35px;
+  cursor: pointer;
+}
+.toggleIcon:hover {
+  color: var(--accent);
+}
+
+.closeIcon {
+}
+.closeIcon:before {
+  content: '\f00d';
+}
+
+.openIcon {
+}
+.openIcon:before {
+  content: '\f0c9';
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logoIcon {
+  flex-shrink: 0;
+  display: block;
+  margin-right: 10px;
+  width: 57px;
+  height: 57px;
+  background: url(https://cdn.dribbble.com/users/71890/screenshots/2233175/movie_house_logo_1x.jpg) no-repeat center / cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.logoText {
+  font-size: 20px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.logoText span:first-child {
+  color: var(--accent);
+}
+.logoText span:last-child {
+  color: var(--dark);
+}
+
+
+.pagesNav {
+  padding: 30px 0 60px;
+}
+
+.pageLink {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.pageLink:hover, .pageLink_active {
+  color: var(--accent);
+}
+.pageLink:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.pageIcon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  width: 40px;
+  font-family: FontAwesome;
+  font-size: 24px;
+}
+
+.movieIcon {
+}
+.movieIcon:before {
+  content: '\f008';
+}
+
+.tvshowIcon {
+}
+.tvshowIcon:before {
+  content: '\f26c';
+}
+
+.libraryIcon {
+}
+.libraryIcon:before {
+  content: '\f02d';
+}
+
+.supportIcon {
+}
+.supportIcon:before {
+  content: '\f1cd';
+}
+
+.pageText {
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.libraryIndicator {
+  margin-left: 8px;
+  font-size: 20px;
+  color: var(--bright);
+}

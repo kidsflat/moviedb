@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+@font-face {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  src: local(FontAwesome),
+       url(font-awesome/fonts/fontawesome-webfont.woff) format('woff');
+}
